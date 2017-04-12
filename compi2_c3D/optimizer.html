@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic3D</title>
+	<link rel="stylesheet" href="assets/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--
+	-->
+	<style>
+		td, th {
+			border: solid 1px rgba(0,0,0,0.3);
+			line-height: 1;
+			padding: 4px;
+			text-align: center;
+		}
+		th{
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+		td.texto{
+			text-align: left;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div class="container" style="width: 95%;">
+			<div class="row">
+				<div class="col s3 teal darken-4" style="height: 620px;">
+					<h5 class="thin white-text">Código Original</h5>
+					<textarea name="c3d" id="c3d" cols="30" rows="10" style="background-color: #fff; height: 90%; width: 100%; border: solid 1px rgba(0,0,0,0.2); border-radius: 3px;"></textarea>
+				</div>
+				<div class="col s6">
+					<div class="col s12 center" style="padding-top: 1em;">
+						<a href="#" class="btn darken-2 green" style="margin-bottom: 1em; width: 60%;">Optimizar código<i class="material-icons left">trending_up</i></a>
+						<a href="#" class="btn darken-2 blue" style="margin-bottom: 1em; width: 60%;">Ver Log de Optimizaciones<i class="material-icons left">list</i></a>
+						<a href="#" class="btn darken-2 blue" style="margin-bottom: 1em; width: 60%;">Ver Diagrama de bloques<i class="material-icons left">photo</i></a>
+						<a href="#" class="btn darken-3 teal" style="margin-bottom: 1em; width: 60%;">Ejecutar código optimizado<i class="material-icons left">play_arrow</i></a>
+
+					</div>
+					<h5 class="light col s12 center">Resumen de optimización</h5>
+					<ul class="collection">
+						<li class="collection-item light">Número de bloques generados: <span class="light"></span></li>
+						<li class="collection-item light">Cantidad de optimizaciones: <span class="light"></span></li>
+						<li class="collection-item light">Cantidad de instrucciones iniciales: <span class="light"></span></li>
+						<li class="collection-item light">Cantidad de instrucciones después de optimizar: <span class="light"></span></li>
+					</ul>
+				</div>
+				<div class="col s3 teal darken-4" style="height: 620px;">
+					<h5 class="thin white-text">Código Optimizado</h5>
+					<textarea name="c3d" id="c3d" cols="30" rows="10" style="background-color: #fff; height: 90%; width: 100%; border: solid 1px rgba(0,0,0,0.2); border-radius: 3px;"></textarea>
+				</div>
+			</div>
+		</div>
+	</main>
+    <script type="text/javascript" src="assets/js/jquery-2.1.1.min.js"></script>
+	<script src="assets/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function() {
+		});
+	</script>
+</body>
+</html>
